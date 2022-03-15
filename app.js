@@ -1,5 +1,5 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode: "user" }, audio: false };
+var constraints = { video: { facingMode: "user" }, audio: false };https://github.com/baharw/cropcam/blob/main/app.js
 var track = null;
 
 // Define constants
@@ -13,7 +13,7 @@ function cameraStart() {
     navigator.mediaDevices
         .getUserMedia(constraints)
         .then(function(stream) {
-            track = stream.getTracks()[0];
+            track = stream.getTracks()[1];
             cameraView.srcObject = stream;
         })
         .catch(function(error) {
